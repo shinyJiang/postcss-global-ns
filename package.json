@@ -1,0 +1,24 @@
+{
+  "name": "postcss-global-ns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinyJiang/postcss-global-ns.git"
+  },
+  "keywords": [
+    "postcss",
+    "global",
+    "ns"
+  ],
+  "author": "jss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinyJiang/postcss-global-ns/issues"
+  },
+  "homepage": "https://github.com/shinyJiang/postcss-global-ns#readme"
+}
