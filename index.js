@@ -1,11 +1,9 @@
 const postcss = require('postcss');
 
 module.exports = postcss.plugin('postcss-global-ns', opts => {
-	
-	opts = opts || {};
+  opts = opts || {};
   let globalClsNames = opts.hasOwnProperty('globalClsNames') && opts.globalClsNames
   return root => {
-    // console.log(root.source.input.file)
 		root.walk(node => {
 			let selectorArr = (node.selector || '').split(',')
 			return node.selector = ((selectorArr || []).map((itm) => {
@@ -22,7 +20,6 @@ module.exports = postcss.plugin('postcss-global-ns', opts => {
         }
 			}).join(','))
 		})
-
 	};
 
 })
